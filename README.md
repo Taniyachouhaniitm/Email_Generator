@@ -2,7 +2,7 @@
 
 An AI-powered Cold Email Generator that automatically creates **personalized, professional cold emails** by analyzing job descriptions from URLs and matching them with a user’s portfolio.
 
-This project is designed to help **students, job seekers, freelancers, and founders** quickly generate high-quality outreach emails tailored to specific roles or companies.
+This project is designed to help **XYZ Company** to quickly refer candidate with high-quality outreach emails tailored to specific roles or companies.
 
 ---
 
@@ -21,8 +21,8 @@ This project is designed to help **students, job seekers, freelancers, and found
 * **Python 3.10+**
 * **Streamlit** – Web interface
 * **LangChain** – LLM orchestration
-* **LLM API (Gemini / OpenAI compatible)** – Email generation
-* **BeautifulSoup / WebBaseLoader** – Job description scraping
+* **LLM API (GROQ)** – Email generation
+* **WebBaseLoader** – Job description scraping
 * **Pandas** – Portfolio handling (CSV)
 
 ---
@@ -76,9 +76,7 @@ pip install -r requirements.txt
 Create a `.env` file or set environment variables:
 
 ```bash
-GOOGLE_API_KEY=your_api_key_here
-# or
-OPENAI_API_KEY=your_api_key_here
+GROQ_API_KEY=your_api_key_here
 ```
 
 ---
@@ -86,7 +84,7 @@ OPENAI_API_KEY=your_api_key_here
 ## ▶️ Running the App
 
 ```bash
-streamlit run app.py
+streamlit run .\app\main.py
 ```
 
 Then open the browser URL shown in the terminal.
@@ -97,30 +95,12 @@ Then open the browser URL shown in the terminal.
 
 1. User pastes a **job posting URL**
 2. App scrapes and cleans the job description
-3. Portfolio projects are loaded from CSV
+3. Portfolio are loaded from CSV
 4. LLM generates a **custom cold email** following a professional structure
 5. Email is displayed and ready to send
 
 ---
 
-## 📌 Example Use Cases
-
-* Cold emailing recruiters
-* Freelance outreach
-* Startup partnership emails
-* Internship & job applications
-
----
-
-## 🔮 Future Improvements
-
-* Resume PDF parsing
-* Email tone selection (formal / friendly / persuasive)
-* LinkedIn message generation
-* Email export (Gmail / Outlook)
-* Vector DB–based portfolio ranking
-
----
 
 ## 👩‍💻 Author
 
